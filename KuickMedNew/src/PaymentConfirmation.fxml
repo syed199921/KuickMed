@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="830.0" prefWidth="1131.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="121.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane prefHeight="185.0" prefWidth="1131.0" style="-fx-border-color: grey;">
+         <children>
+            <Label layoutX="45.0" layoutY="30.0" prefHeight="45.0" prefWidth="230.0" text="KuickMed">
+               <font>
+                  <Font name="System Bold Italic" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="199.0" layoutY="187.0" prefHeight="643.0" prefWidth="932.0">
+         <children>
+            <Label layoutX="334.0" layoutY="194.0" text="Payment Done Successfully">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="248.0" layoutY="267.0" text="Your Order will be delivered within 15 minutes">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="282.0" layoutY="337.0" text="Thank you for shopping via KuickMed!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <VBox layoutY="185.0" prefHeight="652.0" prefWidth="199.0" style="-fx-border-color: grey;">
+         <children>
+            <Button fx:id="onlineButton" mnemonicParsing="false" onAction="#payOnline" prefHeight="112.0" prefWidth="199.0" style="-fx-background-color: grey;" text="Pay Online" />
+            <Button fx:id="LogOutButton" mnemonicParsing="false" onAction="#logOut" prefHeight="112.0" prefWidth="197.0" style="-fx-background-color: lightgrey;" text="Cash On Delivery" />
+         </children>
+      </VBox>
+   </children>
+</fx:root>
